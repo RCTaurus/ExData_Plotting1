@@ -15,7 +15,7 @@ powerconfull$Date <- as.Date(powerconfull$Date, "%d/%m/%Y")
 #Select the data for relevant dates only
 selectdata <- powerconfull[powerconfull$Date=="2007-02-01" | powerconfull$Date=="2007-02-02",]
 
-# Convert to numeric data
+#Convert to numeric data
 selectdata$Global_active_power <- as.numeric(selectdata$Global_active_power)
 selectdata$Sub_metering_1 <- as.numeric(selectdata$Sub_metering_1)
 selectdata$Sub_metering_2 <- as.numeric(selectdata$Sub_metering_2)
